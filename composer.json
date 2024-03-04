@@ -1,0 +1,27 @@
+{
+  "require": {
+    "slim/slim": "^4.4",
+    "slim/psr7": "1.6.1",
+    "twig/twig": "3.7.1",
+    "nesbot/carbon": "2.71.0",
+    "vlucas/phpdotenv": "^4.1",
+    "guzzlehttp/guzzle": "7.8.0",
+    "intervention/image": "^2.7",
+    "aws/aws-sdk-php": "^3.283",
+    "minishlink/web-push": "^6.0",
+    "phpmailer/phpmailer": "6.8.1",
+    "illuminate/events": "10.31.0",
+    "illuminate/database": "10.31.0",
+    "illuminate/pagination": "10.31.0"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.21",
+    "robmorgan/phinx": "0.15.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Data\\": "database",
+      "Server\\": "server"
+    }
+  }
+}

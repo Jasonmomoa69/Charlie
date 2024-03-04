@@ -1,0 +1,61 @@
+<html>
+    <head>
+    </head>
+    <body style="background: black; padding: 1rem; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;">
+
+
+      <section style="max-width: 700px; margin: auto; background: #0B1118; color: #a5bdd9; padding: 1rem">
+
+
+        <div>
+ 
+            <h2 style="text-align: center;">{{ title }}</h2>
+
+            {{ body | raw }}
+        </div><br/>
+
+        <div
+        style="border-bottom: 5px solid #03999E;"
+        ></div>
+
+
+        <center>
+
+          {% if CONTACT_TELEGRAM != "" %}
+            <a href="{{ CONTACT_TELEGRAM }}">
+              <img src="{{ NODE_DOMAIN }}/assets/images/social/telegram-dark.png" />
+            </a>
+          {% endif %}
+          
+          {% if CONTACT_INSTAGRAM != "" %}
+          <a href="{{ CONTACT_INSTAGRAM }}">
+            <img src="{{ NODE_DOMAIN }}/assets/images/social/instagram-dark.png" />
+          </a>
+          {% endif %}
+        
+        </center>
+
+
+          <p style="text-align: justify;">
+            <small>
+            <b>Risk Warning : </b>Cryptocurrency trading is subject to high market risk. {{ NODE_NAME }} will make the best efforts to choose high-quality coins, but will not be responsible for your trading losses. Please trade with caution.
+            Kindly note: Please be aware of phishing sites and always make sure you are visiting the official {{ NODE_NAME }} website when entering sensitive data.
+            </small>
+          </p>
+
+          <p>
+            <center>
+              <small>
+                &copy 2017 - 2022 {{ NODE_NAME }}, All Rights Reserved.
+              </small>
+            </center>   
+          </p>
+
+        </section>
+
+      
+
+    </body>
+  </div>
+</html>
